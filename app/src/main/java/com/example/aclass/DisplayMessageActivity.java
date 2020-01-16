@@ -3,10 +3,13 @@ package com.example.aclass;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
+
+import java.sql.Driver;
 
 public class DisplayMessageActivity extends AppCompatActivity {
 
@@ -48,13 +51,15 @@ public class DisplayMessageActivity extends AppCompatActivity {
     }
 
     public void onClick_cloud(View view) {
-        Intent intent = new Intent(this, Cloud.class);
-
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/drive/"));
         startActivity(intent);
+
     }
 
     public void onClick_cad(View view) {
-        Intent intent = new Intent(this, Cad.class);
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("https://play.google.com/store/apps/details?id=com.wuweido.cad"));
+        intent.setPackage("com.android.vending");
 
         startActivity(intent);
     }

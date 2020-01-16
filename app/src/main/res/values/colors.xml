@@ -7,6 +7,8 @@
     <color name="yellow">#FFE300</color>
     <color name="blue">#4867F8</color>
 
+    <color name="transparent">#00000000</color>
+    <color name="textcolor">#131314</color>
     <color name="colorOrange">#F2B32A</color>
 
 </resources>
