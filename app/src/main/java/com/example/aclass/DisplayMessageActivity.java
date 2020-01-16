@@ -65,7 +65,7 @@ public class DisplayMessageActivity extends AppCompatActivity {
     }
 
     public void onClick_mypage(View view) {
-        Intent intent = new Intent(this, Mypage.class);
+        Intent intent = new Intent(this, Profile.class);
 
         startActivity(intent);
     }
