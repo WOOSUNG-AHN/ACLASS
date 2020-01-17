@@ -6,42 +6,171 @@
     android:layout_height="match_parent"
     tools:context=".Edu">
 
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="411dp"
+        android:layout_height="731dp"
+        tools:ignore="MissingConstraints"
+        >
 
-    <ImageButton
-        android:id="@+id/DisplayMessageActivity_button"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="9dp"
-        android:layout_marginLeft="9dp"
-        android:layout_marginTop="163dp"
-        android:layout_marginEnd="252dp"
-        android:layout_marginRight="252dp"
-        android:layout_marginBottom="418dp"
-        android:background="@drawable/edu1"
-        android:onClick="onclick_pdf"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        <ImageView
+            android:id="@+id/header_cover_image"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/minecraft2" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="109dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="104dp"
-        android:layout_marginLeft="104dp"
-        android:layout_marginTop="68dp"
-        android:layout_marginEnd="198dp"
-        android:layout_marginRight="198dp"
-        android:layout_marginBottom="618dp"
-        android:text="E-book"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/tvEmailSender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+
+            android:layout_toEndOf="@+id/tvIcon"
+            android:layout_toRightOf="@+id/tvIcon"
+            android:text="홍길동님의 강의실 입니다"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:padding="15dp"/>
+
+        <TextView
+            android:id="@+id/tvEmailTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvEmailSender"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/tvIcon"
+            android:layout_toRightOf="@+id/tvIcon"
+            android:text="강의 이름  :  123D로 배우는 3D 세상"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/tvEmailTitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvEmailSender"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@+id/tvIcon"
+            android:layout_toRightOf="@+id/tvIcon"
+            android:text="수강 기간  :  2020.01.01 ~ 2020.03.31"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:textSize="12sp"
+            />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="1"
+            android:layout_below="@+id/header_cover_image"
+            android:gravity="center"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/DisplayMessageActivity_button"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:text="View1"
+
+                    android:onClick="onclick_pdf"
+                    android:layout_weight="1"
+                    android:src="@drawable/edu1"
+
+                    />
+
+                <Button
+                    android:id="@+id/View2"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="VIEW2"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/View3"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="View1"
+                    app:layout_columnSpan="2"
+                    app:layout_gravity="fill"
+                    android:onClick="onclick_pdf"
+                    android:layout_weight="1"
+
+                    />
+
+                <Button
+                    android:id="@+id/View4"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="VIEW2"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/View5"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="View1"
+                    app:layout_columnSpan="2"
+                    app:layout_gravity="fill"
+                    android:onClick="onclick_pdf"
+                    android:layout_weight="1"
+
+                    />
+
+                <Button
+                    android:id="@+id/View6"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="VIEW2"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+
+
+
+        </GridLayout>
+
+
+
+
+
+    </RelativeLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
