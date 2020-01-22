@@ -27,9 +27,8 @@ public class DisplayMessageActivity extends AppCompatActivity {
         textView.setText(message);
     }
     public void sendMe(View view) {
-        Intent intent = new Intent(this, Home.class);
-
-        startActivity(intent);
+        Intent launchIntent = getPackageManager().getLaunchIntentForPackage("com.google.ar.sceneform.samples.solarsystem");
+        startActivity(launchIntent);
     }
 
     public void onClick_board(View view) {
@@ -69,4 +68,9 @@ public class DisplayMessageActivity extends AppCompatActivity {
 
         startActivity(intent);
     }
+
+
+
+
+
 }
