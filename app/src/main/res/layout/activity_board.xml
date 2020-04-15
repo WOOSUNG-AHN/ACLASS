@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Board">
+    tools:context=".Board"
+    android:background="@drawable/main">
 
 
     <ListView
@@ -16,7 +17,11 @@
     android:divider="#4D000000"
     android:dividerHeight="1.5dp"
     android:choiceMode="singleChoice"
-    />
+        android:layout_marginTop="180dp"
+
+
+
+        />
 
     <Button
         android:id="@+id/button_main_insert"

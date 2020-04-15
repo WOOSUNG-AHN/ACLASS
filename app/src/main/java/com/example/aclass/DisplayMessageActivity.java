@@ -23,8 +23,12 @@ public class DisplayMessageActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
 
+        /*
         TextView textView = findViewById(R.id.textView);
         textView.setText(message);
+
+
+         */
     }
     public void sendMe(View view) {
         Intent launchIntent = getPackageManager().getLaunchIntentForPackage("com.google.ar.sceneform.samples.solarsystem");

@@ -4,49 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue"
+    android:background="@drawable/main"
     tools:context=".DisplayMessageActivity">
-
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="177dp"
-        android:layout_height="93dp"
-
-        android:layout_marginStart="190dp"
-        android:layout_marginLeft="190dp"
-        android:layout_marginTop="163dp"
-        android:layout_marginEnd="76dp"
-        android:layout_marginRight="76dp"
-        android:layout_marginBottom="536dp"
-        android:text="TextView"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="#F44336"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/DisplayMessageActivity_button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="반갑습니다" />
 
 
     <ImageButton
         android:id="@+id/DisplayMessageActivity_button"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginStart="9dp"
-        android:layout_marginLeft="9dp"
-        android:layout_marginTop="163dp"
-        android:layout_marginEnd="284dp"
-        android:layout_marginRight="284dp"
-        android:layout_marginBottom="479dp"
         android:onClick="sendMe"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.122"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.347"
         tools:srcCompat="@tools:sample/avatars" />
 
     <ImageButton

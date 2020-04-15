@@ -10,12 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".pdf"></activity>
-        <activity android:name=".Mypage" />
         <activity android:name=".Cad" />
         <activity android:name=".Cloud" />
         <activity android:name=".Data" />
         <activity android:name=".Edu" />
         <activity android:name=".Board" />
+        <activity android:name=".Profile" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,7 +26,7 @@
         </activity>
         <activity
             android:name=".DisplayMessageActivity"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName=".start"
             android:theme="@style/AppTheme.ActionBar.Transparent">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
